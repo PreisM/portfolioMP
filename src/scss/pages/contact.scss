@@ -10,25 +10,25 @@
         font-size: 2em;
         background: #000;
     }
-    .welcome{
+    .contactHead{
         font-size: 6em;
         font-weight: 700;
         margin-bottom: 3em;
         opacity: 0;
         animation: showText 1s forwards;
     }
-    .good{
+    .blueCaption{
         color: $blue-jeans-dark;;
         opacity: 0;
-        animation: showText 2s 1s forwards;
+        animation: showText 2s .7s forwards;
     }
-    .together{
+    .yellowCaption{
         color: $sunflower-dark;
         opacity: 0;
         text-align: right;
-        animation: showText 2s 2s forwards;
+        animation: showText 2s 1.5s forwards;
     }
-    .text {
+    .contactBody {
         font-size: 2em;
         h1{
             margin-bottom: 2em;
@@ -47,4 +47,6 @@
     0% {opacity: 0}
     100% {opacity: 1;}
 }
+
+
 

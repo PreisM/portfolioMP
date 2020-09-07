@@ -1,0 +1,36 @@
+#about{
+    color: #fff;
+    margin: 12em;
+    .home{
+        position: fixed;
+        top: 10%;
+        left: 80%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2em;
+        background: #000;
+    }
+    .aboutHead{
+        font-size: 6em;
+        font-weight: 700;
+        margin-bottom: 3em;
+        opacity: 0;
+        animation: showText 1s forwards;
+    
+        p{
+            text-align: right;
+        }
+        .blueCaption{
+            color: $blue-jeans-dark;
+        }
+        .yellowCaption{
+            color: $sunflower-dark;
+        }
+    }
+    .aboutBody{
+        font-size: 2em;
+        h1{
+            margin-bottom: 2em;
+        }
+    }
+}
