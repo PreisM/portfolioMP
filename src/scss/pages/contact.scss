@@ -1,0 +1,50 @@
+#contact{
+    color: #fff;
+    margin: 12em;
+    .home{
+        position: fixed;
+        top: 10%;
+        left: 80%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2em;
+        background: #000;
+    }
+    .welcome{
+        font-size: 6em;
+        font-weight: 700;
+        margin-bottom: 3em;
+        opacity: 0;
+        animation: showText 1s forwards;
+    }
+    .good{
+        color: $blue-jeans-dark;;
+        opacity: 0;
+        animation: showText 2s 1s forwards;
+    }
+    .together{
+        color: $sunflower-dark;
+        opacity: 0;
+        text-align: right;
+        animation: showText 2s 2s forwards;
+    }
+    .text {
+        font-size: 2em;
+        h1{
+            margin-bottom: 2em;
+        }
+        .social{
+            color: $blue-jeans-dark;
+            font-weight: 700;
+        }
+        .social:hover {
+            color: $sunflower-dark;
+        }
+    }
+}
+
+@keyframes showText {
+    0% {opacity: 0}
+    100% {opacity: 1;}
+}
+

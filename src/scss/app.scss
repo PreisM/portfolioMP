@@ -1,0 +1,32 @@
+// //pobranie zmiennych i niezbędnych do nich funkcji
+@import 'utils/functions';
+@import 'utils/variables';
+
+// //pobranie plików scss frameworków
+// // @import 'vendors/...';
+
+// //pobranie ustawień dla theme
+// // @import 'themes/...';
+
+// //pobranie plików podstawowych
+@import 'base/reset';
+@import 'base/container';
+
+// //pobranie layoutów
+// @import 'layout/header';
+// @import 'layout/footer';
+
+// //pobranie komponentów
+// @import 'components/buttons';
+// @import 'components/menu';
+
+// pobranie pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/works';
+@import 'pages/contact';
+
+// //pobranie tailwind
+// @import "tailwindcss/base";
+// @import "tailwindcss/components";
+// @import "tailwindcss/utilities";
