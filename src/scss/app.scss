@@ -11,13 +11,14 @@
 // //pobranie plików podstawowych
 @import 'base/reset';
 @import 'base/container';
+@import 'base/scroll';
 
 // //pobranie layoutów
 // @import 'layout/header';
 // @import 'layout/footer';
 
-// //pobranie komponentów
-// @import 'components/buttons';
+// pobranie komponentów
+@import 'components/homeLink';
 // @import 'components/menu';
 
 // pobranie pages

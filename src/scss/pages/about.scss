@@ -1,36 +1,74 @@
-#about{
+#about {
     color: #fff;
-    margin: 12em;
-    .home{
-        position: fixed;
-        top: 10%;
-        left: 80%;
-        color: #fff;
-        font-weight: 700;
-        font-size: 2em;
-        background: #000;
-    }
-    .aboutHead{
-        font-size: 6em;
+    margin-top: 4em;
+    .aboutHead {
+        font-size: 3em;
         font-weight: 700;
         margin-bottom: 3em;
         opacity: 0;
         animation: showText 1s forwards;
-    
-        p{
+        @include breakpoint(md){
+            font-size: 5em;
+        }
+        @include breakpoint(lg){
+            margin: 2em 1em;
+        }
+        @include breakpoint(xl){
+            margin: 2em 2em;
+        }
+        @include breakpoint(xxl){
+            font-size: 6em;
+        }
+        p {
             text-align: right;
         }
-        .blueCaption{
+        .blueCaption {
             color: $blue-jeans-dark;
         }
-        .yellowCaption{
+        .yellowCaption {
             color: $sunflower-dark;
         }
     }
-    .aboutBody{
+    .aboutBody {
         font-size: 2em;
-        h1{
-            margin-bottom: 2em;
+        text-align: center;
+        @include breakpoint(xl){
+            text-align: justify;
+            margin: 4em;
+        }
+        .skill{
+            display:block;
+            width:100%;
+            height: auto;
+            margin: 0 ;
+            font-size: .6em;
+            color: $sunflower-dark;
+            text-align: center;
+            .space{
+                margin: 0em 1em;
+                overflow: hidden;
+                @include breakpoint(lg){
+                    width: 45%;
+                    float: left;
+                }
+                h2{
+                    margin-top: 4em;
+                    color:$blue-jeans-dark;
+                }
+                ul {
+                font-weight: 700;
+                width: 100%;
+                padding: 0 1em;
+                text-align: center;
+                
+                    li{
+                        margin: 1.2em .8em;
+                        float:left;
+                        text-align:center;
+                    }
+            }
+            }
         }
     }
 }
+

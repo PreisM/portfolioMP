@@ -1,0 +1,64 @@
+.home {
+    position: fixed;
+    top: 4%;
+    left: 85%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3em;
+    overflow: hidden;
+    background: #000;
+    z-index: 999;
+    @include breakpoint(lg){
+        top:10%;
+    }
+}
+.home {
+    span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+    }
+    span:first-of-type {
+        color: $blue-jeans-dark;
+        @include breakpoint(lg){
+            color: white;
+        }
+    }
+    span:last-of-type {
+        color: $sunflower-dark;
+        @include breakpoint(lg){
+            color: white;
+        }
+    }
+
+    &:hover span:first-of-type {
+        color: $blue-jeans-dark;
+    }
+    &:hover span:last-of-type {
+        color: $sunflower-dark;
+    }
+    & span::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $blue-jeans-dark;
+        line-height: 0.8;
+        -webkit-transition: -webkit-transform 0.7s;
+        transition: transform 0.7s;
+    }
+    & span:last-of-type::before {
+        background: $sunflower-dark;
+    }
+    &:hover span:last-of-type::before,
+    & span:first-of-type::before {
+        -webkit-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+    &:hover span:first-of-type::before,
+    & span:last-of-type::before {
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+}

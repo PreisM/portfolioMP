@@ -1,45 +1,52 @@
-#home{
-    padding: 13vh;
-    .text{
-    font-size: 20vh;
-    font-weight: 700;
-    margin-left: 0em;
-    width: 3em;
-    position: relative;
-    color: #fff;
-    transition: .2s;
-    animation: showText 1s;
-        a{
-            color: white;
-            position: absolute;
-            top:0;
-            left:0;
-            display:none;
-        }
+#home {
+  overflow:hidden;
+  margin-top: 3em;
+    .text {
+      font-size: 10em;
+      font-weight: 700;
+      width: 3em;
+      position: relative;
+      color: #fff;
+      transition: 0.2s;
+      animation: showText 1s;
+      a {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
     }
-    .text:hover{
-        color:black; 
+    .text:hover {
+      color: black;
     }
-    .text:hover a{
-        display: block;
+    .text:hover a {
+      display: block;
     }
-    .blue{
+    .blue {
+      color: $blue-jeans-dark;
+      a {
         color: $blue-jeans-dark;
-        a{
-            color: $blue-jeans-dark;
-        }
+      }
     }
     .yellow {
+      color: $sunflower-dark;
+      a {
         color: $sunflower-dark;
-        a{
-            color: $sunflower-dark;
-        }
+      }
     }
-    
-}
-
-@keyframes showText {
-    0% {height: 0px; color: black;}
-    100% {height: 1.15em;}
-}
-
+    .mobile {
+      color: white;
+      position: relative;
+      bottom: 0;
+      left: 0%;
+      font-size: 2em;
+      border: 2px solid white;
+      margin: 0 auto;
+      text-align: center;
+      width: 50%;
+      @include breakpoint(md){
+        display: none;
+    }
+    }
+  }
