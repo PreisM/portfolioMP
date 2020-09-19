@@ -1,22 +1,23 @@
-#works{
+#works {
   color: #fff;
-  .worksHead{
-      font-size: 6em;
-      font-weight: 700;
-      margin: 3em 0;
+  overflow: hidden;
+  .worksHead {
+    font-size: 6em;
+    font-weight: 700;
+    margin: 3em 0;
+    opacity: 0;
+    animation: showText 1s forwards;
+
+    .blueCaption {
+      color: $blue-jeans-dark;
       opacity: 0;
-      animation: showText 1s forwards;
-    
-    .blueCaption{
-        color: $blue-jeans-dark;
-        opacity: 0;
-        animation: showText 2s .7s forwards;
+      animation: showText 2s 0.7s forwards;
     }
-    .yellowCaption{
-        color: $sunflower-dark;
-        opacity: 0;
-        text-align: right;
-        animation: showText 2s 1.5s forwards;
+    .yellowCaption {
+      color: $sunflower-dark;
+      opacity: 0;
+      text-align: right;
+      animation: showText 2s 1.5s forwards;
     }
   }
   .worksBody {
@@ -31,51 +32,52 @@
       width: 30%;
       margin: 1em;
       position: relative;
-      transition: .3s;
-    
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(#000, 0);
-          transition: .3s;
-        }
-        &:hover .description{
-          top: 65%;
-          opacity: 1;
-        }
-        &:hover .description>h2,
-        &:hover .description>h3{
-          opacity: 1;
-        }
+      transition: 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0);
+        transition: 0.3s;
+      }
+      &:hover .description {
+        top: 65%;
+        opacity: 1;
+      }
+      &:hover .description > h2,
+      &:hover .description > h3 {
+        opacity: 1;
+      }
       img {
         display: block;
         width: 100%;
       }
-      .description{
+      .description {
         position: absolute;
         top: 90%;
         left: 0%;
         width: 100%;
-        background-color:rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, 0.7);
         text-align: center;
-        overflow:hidden;
+        overflow: hidden;
         z-index: 1;
         opacity: 0;
         transition: 1s;
-        h2, h3{
-          margin: .4em auto;
+        h2,
+        h3 {
+          margin: 0.4em auto;
           opacity: 0;
           transition: 1s;
         }
-        a:first-of-type{
+        a:first-of-type {
           color: $blue-jeans-dark;
           margin: 0 1em;
         }
-        a:last-of-type{
+        a:last-of-type {
           color: $sunflower-dark;
           margin: 0 1em;
         }

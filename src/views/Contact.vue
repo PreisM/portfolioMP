@@ -16,10 +16,10 @@
         <a class="social" href="#">Linkedin</a>
       </p>
       <p>
-        <a class="social" href>Github</a>
+        <a class="social" href="#">Github</a>
       </p>
       <p>
-        <a class="social" href>maciej.preis@onet.eu</a>
+        <a class="social" href="#">maciej.preis@onet.eu</a>
       </p>
     </div>
   </div>

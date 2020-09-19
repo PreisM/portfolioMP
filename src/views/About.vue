@@ -4,13 +4,13 @@
     <div class="aboutHead">
       Are you looking for a Junior Frontend Developer?
       <p>
-        <span class="blueCaption">Here </span>
+        <span class="blueCaption">Here</span>
         <span class="yellowCaption">I am</span>
       </p>
     </div>
     <div class="aboutBody">
       <h1>Hello!</h1>
-      <p>My name is Maciej Preis and I looking for oppurtunity to be a better Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio consequuntur pariatur natus ipsam quasi veniam mollitia voluptatum nulla? Vitae? </p>
+      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio consequuntur pariatur natus ipsam quasi veniam mollitia voluptatum nulla? Vitae?</p>
       <div class="skill">
         <div class="space">
           <h2>What do I use on a daily basis</h2>

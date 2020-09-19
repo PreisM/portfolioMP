@@ -1,27 +1,46 @@
 #home {
-  overflow:hidden;
-  margin-top: 3em;
+  overflow: hidden;
+  margin-top: 0;
+  #navigation {
+    float: none;
+    @include breakpoint(lg) {
+      float: left;
+      margin-top: 1em;
+    }
     .text {
-      font-size: 10em;
+      text-align: center;
+      font-size: 5em;
       font-weight: 700;
-      width: 3em;
       position: relative;
       color: #fff;
       transition: 0.2s;
       animation: showText 1s;
+      @include breakpoint(sm) {
+        font-size: 8em;
+        text-align: left;
+      }
       a {
+        font-size: 0.7em;
         color: white;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 15%;
         display: none;
+        @include breakpoint(sm) {
+          left: 0%;
+        }
+        @include breakpoint(md) {
+          font-size: 1em;
+        }
       }
     }
-    .text:hover {
-      color: black;
+    .text:hover,
+    .mobileText {
+      color: black !important;
     }
-    .text:hover a {
-      display: block;
+    .text:hover a,
+    .mobileLink {
+      display: block !important;
     }
     .blue {
       color: $blue-jeans-dark;
@@ -35,18 +54,53 @@
         color: $sunflower-dark;
       }
     }
-    .mobile {
-      color: white;
-      position: relative;
-      bottom: 0;
-      left: 0%;
-      font-size: 2em;
-      border: 2px solid white;
-      margin: 0 auto;
-      text-align: center;
-      width: 50%;
-      @include breakpoint(md){
-        display: none;
+  }
+  #mobileBtn {
+    overflow: hidden;
+    position: fixed;
+    outline: none;
+    bottom: 5%;
+    left: 38%;
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 42px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 42px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 42px 0px rgba(255,255,255,1);
+    animation: pulse 1.2s infinite linear alternate ;
+    @include breakpoint(md) {
+      left: 50%;
     }
+    @include breakpoint(lg) {
+      display: none;
     }
   }
+  img {
+    position: absolute;
+    top: 0%;
+    right: -10%;
+    display: none;
+    width: 500px;
+    @include breakpoint(xl) {
+      right: 5%;
+    }
+    @include breakpoint(lg) {
+      width: 600px !important;
+    }
+    @include breakpoint(md) {
+      display: block;
+    }
+
+  }
+}
+
+@keyframes pulse {
+  0% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}
