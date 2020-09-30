@@ -15,7 +15,7 @@
     </div>
 
   </div>
-    <img src="../img/logonew8.png">
+    <img src="../img/logoMP.png">
     <button id="mobileBtn" @click="mobileTap()">
       Tap me!
     </button>
@@ -23,8 +23,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",

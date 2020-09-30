@@ -7,17 +7,14 @@
     margin: 3em 0;
     opacity: 0;
     animation: showText 1s forwards;
-
     .blueCaption {
       color: $blue-jeans-dark;
-      opacity: 0;
-      animation: showText 2s 0.7s forwards;
     }
     .yellowCaption {
       color: $sunflower-dark;
-      opacity: 0;
-      text-align: right;
-      animation: showText 2s 1.5s forwards;
+    }
+    p{
+      text-align: right
     }
   }
   .worksBody {

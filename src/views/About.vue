@@ -4,7 +4,7 @@
     <div class="aboutHead">
       Are you looking for a Junior Frontend Developer?
       <p>
-        <span class="blueCaption">Here</span>
+        <span class="blueCaption">Here </span>
         <span class="yellowCaption">I am</span>
       </p>
     </div>

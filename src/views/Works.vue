@@ -2,9 +2,9 @@
     <div id="works">
       <HomeLink />
       <div class="worksHead">
-        oś tamcoś tam
-        <span class="blueCaption">coś!</span> 
-        <p class="yellowCaption">tam!</p>
+        Here are my works. 
+        <p> <span class="blueCaption">Feel free</span>  
+        <span class="yellowCaption"> to check!</span></p>
       </div>
       <ul class="worksBody">
         <li class="portfolio-item">
