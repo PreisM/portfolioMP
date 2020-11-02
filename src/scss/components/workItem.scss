@@ -1,0 +1,63 @@
+.work-item {
+    
+    width: 80%;
+    margin: 2em auto;
+    position: relative;
+    transition: 0.3s;
+    @include breakpoint(md) {
+      width: 45%;
+      float: left;
+      margin: 1em;
+    }
+    @include breakpoint(xl) {
+      width: 30%
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 0);
+      transition: 0.3s;
+    }
+    &:hover .description {
+      top: 65%;
+      opacity: 1;
+    }
+    &:hover .description > h2,
+    &:hover .description > h3 {
+      opacity: 1;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    .description {
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      overflow: hidden;
+      z-index: 1;
+      opacity: 0;
+      transition: 1s;
+      h2,
+      h3 {
+        margin: 0.4em auto;
+        opacity: 0;
+        transition: 1s;
+      }
+      a:first-of-type {
+        color: $blue-jeans-dark;
+        margin: 0 1em;
+      }
+      a:last-of-type {
+        color: $sunflower-dark;
+        margin: 0 1em;
+      }
+    }
+  }

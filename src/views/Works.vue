@@ -1,64 +1,85 @@
 <template>
-    <div id="works">
-      <HomeLink />
-      <div class="worksHead">
-        Here are my works. 
-        <p> <span class="blueCaption">Feel free</span>  
-        <span class="yellowCaption"> to check!</span></p>
-      </div>
-      <ul class="worksBody">
-        <li class="portfolio-item">
-          <img src="../img/burger.png" alt="BurgerMAXX">
-          <div class="description">
-            <h2>Burger Restaurant</h2>
-            <h3><a href="https://preism.github.io/BurgerRestaurant/" target="_blank">Live</a> <a href="https://github.com/PreisM/BurgerRestaurant" target="_blank">Code</a></h3>
-          </div>
-        </li>
-        <li class="portfolio-item">
-          <img src="../img/invoiceapp.png" alt="InvoiceApp">
-          <div class="description">
-            <h2>Invoice App</h2>
-            <h3><a href="https://preism.github.io/InvoiceApp/" target="_blank">Live</a> <a href="https://github.com/PreisM/InvoiceApp" target="_blank">Code</a></h3>
-          </div>
-        </li>
-        <li class="portfolio-item">
-          <img src="../img/quiz.png" alt="Quiz IT">
-          <div class="description">
-            <h2>Quiz IT</h2>
-            <h3><a href="https://preism.github.io/QuizIT/" target="_blank">Live</a> <a href="https://github.com/PreisM/QuizIT" target="_blank">Code</a></h3>
-          </div>
-        </li>
-        <li class="portfolio-item">
-          <img src="../img/calculator.png" alt="Calculator">
-          <div class="description">
-            <h2>Calculator</h2>
-            <h3><a href="https://preism.github.io/Calculator/" target="_blank">Live</a> <a href="https://github.com/PreisM/Calculator" target="_blank">Code</a></h3>
-          </div>
-        </li>
-        <li class="portfolio-item">
-          <img src="../img/oldportfolio.png" alt="Portfolio(outOfDate)">
-          <div class="description">
-            <h2>Portfolio (out of date)</h2>
-            <h3><a href="https://preism.github.io/Portfolio/" target="_blank">Live</a> <a href="https://github.com/PreisM/Portfolio" target="_blank">Code</a></h3>
-          </div>
-        </li>
-        <li class="portfolio-item">
-          <img src="../img/homergame.png" alt="HomerGame">
-          <div class="description">
-            <h2>"The simpsons" game</h2>
-            <h3><a href="https://preism.github.io/HomerGame/" target="_blank">Live</a> <a href="https://github.com/PreisM/HomerGame" target="_blank">Code</a></h3>
-          </div>
-        </li>
-      </ul>
+  <div id="works">
+    <HomeLink />
+    <div class="worksHead">
+      <span>Some of my works.</span>
+      <p>
+        <span class="blueCaption">Feel free</span>
+        <span class="yellowCaption"> to check!</span>
+      </p>
     </div>
+    <div class="worksBody">
+      <section class="workItems">
+        <WorkItem
+          v-for="work in works"
+          :key="work.id"
+          :img="work.img"
+          :title="work.title"
+          :live="work.live"
+          :code="work.code"
+        />
+      </section>
+    </div>
+  </div>
 </template>
 
 <script>
-import HomeLink from '../components/HomeLink'
+import HomeLink from "../components/HomeLink";
+import WorkItem from "../components/WorkItem";
+
 export default {
   components: {
     HomeLink,
+    WorkItem
+  },
+  data() {
+    return {
+      works: [
+        {
+          id: "1",
+          img: require("@/img/burger.png"),
+          title: "Burger Restaurant",
+          live: "https://preism.github.io/BurgerRestaurant/",
+          code: "https://github.com/PreisM/BurgerRestaurant"
+        },
+        {
+          id: "2",
+          img: require("@/img/invoiceapp.png"),
+          title: "Invoice App",
+          live: "https://preism.github.io/InvoiceApp/",
+          code: "https://github.com/PreisM/InvoiceApp"
+        },
+        {
+          id: "3",
+          img: require("@/img/quiz.png"),
+          title: "Quiz IT",
+          live: "https://preism.github.io/QuizIT/",
+          code: "https://github.com/PreisM/QuizIT"
+        },
+        {
+          id: "4",
+          img: require("@/img/calculator.png"),
+          title: "Calculator",
+          live: "https://preism.github.io/Calculator/",
+          code: "https://github.com/PreisM/Calculator"
+        },
+        {
+          id: "5",
+          img: require("@/img/oldportfolio.png"),
+          title: "Portfolio (out of date)",
+          live: "https://preism.github.io/Portfolio/",
+          code: "https://github.com/PreisM/Portfolio"
+        },
+        {
+          id: "6",
+          img: require("@/img/homergame.png"),
+          title: "'The simpsons' game",
+          live: "https://preism.github.io/HomerGame/",
+          code: "https://github.com/PreisM/HomerGame"
+        }
+      ]
+    };
   }
-}
+};
 </script>
 
