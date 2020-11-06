@@ -8,28 +8,28 @@
       margin-top: 1em;
     }
     .text {
+      margin-top: .3em;
       text-align: center;
-      font-size: 5em;
+      font-size: 6em;
       font-weight: 700;
       position: relative;
       color: #fff;
       transition: 0.2s;
       animation: showText 1s;
       @include breakpoint(sm) {
+        margin-top: 0;
         font-size: 8em;
         text-align: left;
       }
       a {
-        font-size: 0.7em;
+        font-size: .8em;
+        overflow: auto;
         color: white;
         position: absolute;
         top: 0;
-        left: 15%;
+        left: 0%;
         display: none;
         @include breakpoint(sm) {
-          left: 0%;
-        }
-        @include breakpoint(md) {
           font-size: 1em;
         }
       }
@@ -92,7 +92,6 @@
     @include breakpoint(md) {
       display: block;
     }
-
   }
 }
 

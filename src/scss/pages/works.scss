@@ -2,11 +2,17 @@
   color: #fff;
   overflow: hidden;
   .worksHead {
-    font-size: 6em;
+    font-size: 3em;
     font-weight: 700;
-    margin: 3em 0;
+    margin: 2em 0;
     opacity: 0;
     animation: showText 1s forwards;
+    @include breakpoint(md) {
+      font-size: 4em;
+    }
+    @include breakpoint(xl) {
+        margin: 2em 2em;
+    }
     .blueCaption {
       color: $blue-jeans-dark;
     }

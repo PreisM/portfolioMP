@@ -10,7 +10,11 @@
     </div>
     <div class="aboutBody">
       <h1>Hello!</h1>
-      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio consequuntur pariatur natus ipsam quasi veniam mollitia voluptatum nulla? Vitae?</p>
+      <span>
+        <p>My name is Maciej and I have been programming every day for over a year ☺</p>
+        <p>Programming is my passion which I would like to turn into work. In my learning I focus on frontend technologies, especially Vue.JS.</p>
+        <p>I am looking for opportunities to gain experience - I will gladly take part in an open-source project, help with a single order, or establish permanent cooperation.</p>
+      </span>
       <div class="skill">
         <div class="space">
           <h2>What do I use on a daily basis</h2>

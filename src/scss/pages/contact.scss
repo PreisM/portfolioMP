@@ -35,11 +35,7 @@
         font-size: 2em;
         text-align: center;
         @include breakpoint(lg) {
-            text-align: justify;
             margin: 4em;
-        }
-        h1 {
-            margin-bottom: 2em;
         }
         .social {
             color: $blue-jeans-dark;
