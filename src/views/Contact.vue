@@ -8,16 +8,30 @@
     </div>
     <div class="contactBody">
       <p>
-        <a class="social" href="https://www.facebook.com/preis.maciej" target="_blank">Facebook</a>
+        <a
+          class="social"
+          href="https://www.facebook.com/preis.maciej"
+          target="_blank"
+          >Facebook</a
+        >
       </p>
       <p>
-        <a class="social" href="https://www.linkedin.com/in/maciej-preis-31476b19a/" target="_blank">Linkedin</a>
+        <a
+          class="social"
+          href="https://www.linkedin.com/in/maciej-preis-31476b19a/"
+          target="_blank"
+          >Linkedin</a
+        >
       </p>
       <p>
-        <a class="social" href="https://github.com/PreisM" target="_blank">Github</a>
+        <a class="social" href="https://github.com/PreisM" target="_blank"
+          >Github</a
+        >
       </p>
       <p>
-        <a class="social" href="mailto:maciej.preis@onet.eu" target="_blank">maciej.preis@onet.eu</a>
+        <a class="social" href="mailto:maciej.preis@onet.eu" target="_blank"
+          >maciej.preis@onet.eu</a
+        >
       </p>
     </div>
   </div>
