@@ -4,8 +4,9 @@
     <div class="worksHead">
       <span>Some of my works.</span>
       <p>
-        <span class="blueCaption">Feel free</span>
-        <span class="yellowCaption"> to check!</span>
+        <span class="blueCaption">I invite you </span>
+        <br />
+        <span class="yellowCaption">to check them</span>
       </p>
     </div>
     <div class="worksBody">
