@@ -30,7 +30,7 @@
       </p>
       <p>
         <a class="social" href="mailto:maciej.preis@onet.eu" target="_blank"
-          >maciej.preis@onet.eu</a
+          >E-mail</a
         >
       </p>
     </div>

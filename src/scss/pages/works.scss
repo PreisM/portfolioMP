@@ -24,10 +24,12 @@
     }
   }
   .worksBody {
-    &:hover .work-item:not(:hover) {
-      filter: grayscale(100%);
-      &::after {
-        background-color: rgba(#000, 0.5);
+    @include breakpoint(sm) {
+      &:hover .work-item:not(:hover) {
+        filter: grayscale(100%);
+        &::after {
+          background-color: rgba(#000, 0.5);
+        }
       }
     }
   }

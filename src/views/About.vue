@@ -11,9 +11,19 @@
     <div class="aboutBody">
       <h1>Hello!</h1>
       <span>
-        <p>My name is Maciej and I have been programming every day for over a year ☺</p>
-        <p>Programming is my passion which I would like to turn into work. In my learning I focus on frontend technologies, especially Vue.JS.</p>
-        <p>I am looking for opportunities to gain experience - I will gladly take part in an open-source project, help with a single order, or establish permanent cooperation.</p>
+        <p>
+          My name is Maciej and I have been programming every day for over a
+          year ☺
+        </p>
+        <p>
+          Programming is my passion which I would like to turn into work. In my
+          learning I focus on frontend technologies, especially Vue.JS.
+        </p>
+        <p>
+          I am looking for opportunities to gain experience - I will gladly take
+          part in an open-source project, help with a single order, or establish
+          permanent cooperation.
+        </p>
       </span>
       <div class="skill">
         <div class="space">

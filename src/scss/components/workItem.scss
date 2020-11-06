@@ -1,17 +1,17 @@
 .work-item {
-    
-    width: 80%;
-    margin: 2em auto;
-    position: relative;
-    transition: 0.3s;
-    @include breakpoint(md) {
-      width: 45%;
-      float: left;
-      margin: 1em;
-    }
-    @include breakpoint(xl) {
-      width: 30%
-    }
+  width: 80%;
+  margin: 2em auto;
+  position: relative;
+  transition: 0.3s;
+  @include breakpoint(md) {
+    width: 45%;
+    float: left;
+    margin: 1em;
+  }
+  @include breakpoint(xl) {
+    width: 30%;
+  }
+  @include breakpoint(sm) {
     &::after {
       content: "";
       position: absolute;
@@ -30,34 +30,43 @@
     &:hover .description > h3 {
       opacity: 1;
     }
-    img {
-      display: block;
-      width: 100%;
-    }
-    .description {
-      position: absolute;
-      top: 90%;
-      left: 0%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      text-align: center;
-      overflow: hidden;
-      z-index: 1;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  .description {
+    font-size: .75em;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    transition: 1s;
+    @include breakpoint(sm) {
+      font-size: 1em;
       opacity: 0;
+      top: 90%;
+    }
+    h2,
+    h3 {
+      margin: 0.4em auto;
+
       transition: 1s;
-      h2,
-      h3 {
-        margin: 0.4em auto;
+      @include breakpoint(sm) {
         opacity: 0;
-        transition: 1s;
       }
-      a:first-of-type {
-        color: $blue-jeans-dark;
-        margin: 0 1em;
-      }
-      a:last-of-type {
-        color: $sunflower-dark;
-        margin: 0 1em;
-      }
+    }
+    a:first-of-type {
+      color: $blue-jeans-dark;
+      margin: 0 1em;
+    }
+    a:last-of-type {
+      color: $sunflower-dark;
+      margin: 0 1em;
     }
   }
+}

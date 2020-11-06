@@ -1,31 +1,31 @@
 //container RWD
 
 .container{
-    @include breakpoint(xs) {
-      width: 100%;
-      margin: 0;
-      padding: 0 16px;
-    }
-    @include breakpoint(sm) {
-      padding: 0px;
-      width: 540px;
-      margin: auto;
-    }
-    @include breakpoint(md) {
-      width: 720px;
-    }
-    @include breakpoint(lg) {
-      width: 960px;
-    }
-    @include breakpoint(xl) {
-      width: 1140px;
-    }
-    @include breakpoint(xxl) {
-      width: 1320px;
-    }
-    &-fluid{
-      width: 100%;
-      margin: 0;
-      padding: 0 16px;
-    }
+  @include breakpoint(xs) {
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+  @include breakpoint(sm) {
+    padding: 0px;
+    width: 540px;
+    margin: auto;
+  }
+  @include breakpoint(md) {
+    width: 720px;
+  }
+  @include breakpoint(lg) {
+    width: 960px;
+  }
+  @include breakpoint(xl) {
+    width: 1140px;
+  }
+  @include breakpoint(xxl) {
+    width: 1320px;
+  }
+  &-fluid{
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
 }

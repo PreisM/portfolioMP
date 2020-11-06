@@ -4,8 +4,8 @@
     <div class="description">
       <h2>{{ title }}</h2>
       <h3>
-        <a :href="live">Live</a>
-        <a :href="code">Code</a>
+        <a :href="live" target="_blank">Live</a>
+        <a :href="code" target="_blank">Code</a>
       </h3>
     </div>
   </article>

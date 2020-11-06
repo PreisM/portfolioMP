@@ -1,48 +1,45 @@
 #contact {
-    color: #fff;
-    margin-top: 4em;
-    .contactHead {
-        font-size: 3em;
-        font-weight: 700;
-        margin-bottom: 3em;
-        opacity: 0;
-        animation: showText 1s forwards;
-        @include breakpoint(md) {
-            font-size: 5em;
-        }
-        @include breakpoint(lg) {
-            margin: 2em 1em;
-        }
-        @include breakpoint(xl) {
-            margin: 2em 2em;
-        }
-        @include breakpoint(xxl) {
-            font-size: 6em;
-        }
+  color: #fff;
+  margin-top: 4em;
+  .contactHead {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 3em;
+    opacity: 0;
+    animation: showText 1s forwards;
+    @include breakpoint(md) {
+      font-size: 5em;
+    }
+    @include breakpoint(lg) {
+      margin: 2em 1em;
+    }
+    @include breakpoint(xl) {
+      margin: 2em 2em;
+    }
+    @include breakpoint(xxl) {
+      font-size: 6em;
     }
     .blueCaption {
-        color: $blue-jeans-dark;
-        opacity: 0;
-        animation: showText 2s 0.7s forwards;
+      color: $blue-jeans-dark;
+      opacity: 0;
+      animation: showText 2s 0.7s forwards;
     }
     .yellowCaption {
-        color: $sunflower-dark;
-        opacity: 0;
-        text-align: right;
-        animation: showText 2s 1.5s forwards;
+      color: $sunflower-dark;
+      opacity: 0;
+      text-align: right;
+      animation: showText 2s 1.5s forwards;
     }
-    .contactBody {
-        font-size: 2em;
-        text-align: center;
-        @include breakpoint(lg) {
-            margin: 4em;
-        }
-        .social {
-            color: $blue-jeans-dark;
-            font-weight: 700;
-        }
-        .social:hover {
-            color: $sunflower-dark;
-        }
+  }
+  .contactBody {
+    font-size: 2em;
+    text-align: center;
+    .social {
+      color: $blue-jeans-dark;
+      font-weight: 700;
     }
+    .social:hover {
+      color: $sunflower-dark;
+    }
+  }
 }
